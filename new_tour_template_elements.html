@@ -1,0 +1,112 @@
+<? include( "/home/pilgrima/www/register/copysource/web_config.php" ); ?>
+<? include( "/home/pilgrima/www/register/copysource/functions_website.php" ); ?>
+<? include( "/home/pilgrima/www/register/components/functions.php" ); ?>
+<? $TOUR_ID = "HA071618"; $TOUR_INFO = get_tour_info_responsive(PA102918); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <? include("/home/pilgrima/www/register/components/static_head_data.htm");?>
+    <title><? echo $TOUR_INFO['TourName']; ?> with 206 Tours - Catholic Pilgrimages</title>
+    <meta property="og:image" content=""/> <!--TODO: Add to the DB and admin-->
+    <meta name="Description" content=""> <!--TODO: Add to the DB and admin-->
+    <meta name="KeyWords" content="">
+</head>
+<body>
+<div class="wrapper">
+    <!--Promo start here-->
+    <? include("/home/pilgrima/www/register/components/top_promo.htm");?>
+    <!--Promo ends here-->
+
+    <!--Header start here-->
+    <? include("/home/pilgrima/www/register/components/header.htm");?>
+    <!--Header end here-->
+
+    <main id="main">
+        <!--Aside links (contact, brochures, live, chat) starts here-->
+        <? include("/home/pilgrima/www/register/components/aside_links.htm");?>
+        <!--Aside links (contact, brochures, live, chat) ends here-->
+
+        <div class="row">
+            <div class="small-12 large-9 columns">
+                <div class="page-title clearfix">
+                    <? get_static_block('back_arrow',,true); ?>
+
+                    <div class="float-left centered">
+                        <div><span class="days"><? echo $TOUR_INFO['TourNumDays']; ?><small>Days</small></span></div>
+
+                        <div class="page-title-custom">
+                            <h2 class="bottommargin-md">The Monasteriesand Beer of Belgiumand Germany with Fr. Harrison Ayre</h2>
+                            <h3 class="bottommargin-md">Germany, Switzerland & Salzburg</h3>
+                            <h4 class="bottommargin-md">July 16 - 26, 2018</h4>
+                            <small><? echo $TOUR_INFO['TourNumber']; ?></small></div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="small-12 columns hide-for-large noprint">
+
+            <!--Slider 1 "Top slider for mobile"start here-->
+            <div class="tour-details-banner">
+                <div class="top-slider">
+                    <div>
+                        <img src="#" title="title_placeholder"></div>
+                </div>
+            </div>
+            <!--Slider 1 "top slider for mobile"end here-->
+
+            <!-- Top naviagtion mobile start -->
+            <? get_static_block(top_nav_mob); ?>
+            <!-- Top naviagtion mobile end -->
+        </div>
+
+
+        <!--____________________________________________________________ -->
+
+        <!--Questions section -->
+        <div class="small-12 medium-6 large-12 columns">
+            <? get_static_block(share_icons); ?>
+            <div class="b-info_inner">
+                <div class="title bottommargin-sm">
+                    <h5>Any questions? &nbsp;Contact Us:</h5>
+                </div>
+            </div>
+            <? get_contact_person('Amanda', 'Account manager', 'http://www.206tours.com/aboutus/images/amanda3.jpg', 'amanda@206tours.com'); ?>
+            <? get_contact_person('Bika', 'Travel Consultant', 'http://www.206tours.com/aboutus/images/bika3.jpg', 'bika@206tours.com'); ?>
+            <? get_static_block('additonal_info', 'http://pilgrimages.com/frharrison/Fr_Harrison_Ayre - Belgiu_ &_Germany.pdf')?>
+        </div>
+
+            <? get_hotel('Radisson Blu', 'Brussels', '3 Nights', 'http://www.206tours.com/assets/images/hotels/generic-hotel-image.jpg'); ?>
+
+            <? get_book_now_section(false, false); ?>
+
+        </div>
+    </main>
+
+    <!-- Footer starts here -->
+    <? include("/home/pilgrima/www/register/components/footer.htm");?>
+    <!-- Footer ends here -->
+</div>
+</body>
+</html>
+
+
+<!--Questions section -->
+<div class="small-12 medium-6 large-12 columns">
+    <? get_static_block(share_icons); ?>
+    <div class="b-info_inner">
+        <div class="title bottommargin-sm">
+            <h5>Any questions? &nbsp;Contact Us:</h5>
+        </div>
+    </div>
+    <? get_contact_person('Amanda', 'Account manager', 'http://www.206tours.com/aboutus/images/amanda3.jpg', 'amanda@206tours.com'); ?>
+    <? get_contact_person('Bika', 'Travel Consultant', 'http://www.206tours.com/aboutus/images/bika3.jpg', 'bika@206tours.com'); ?>
+    <? get_static_block('additonal_info', 'http://pilgrimages.com/frharrison/Fr_Harrison_Ayre - Belgiu_ &_Germany.pdf')?>
+</div>
+
+<? // get_hotel('Radisson Blu', 'Brussels', '3 Nights', 'http://www.206tours.com/assets/images/hotels/generic-hotel-image.jpg') ?>
+
+<? // get_book_now_section(false, false); ?>
+
+<? //  get_kbyg ('Germany', 'http://www.206tours.com/assets/images/kbyg/oberammergau-passion-play-logo-kbyg2.jpg', 'http://www.206tours.com/info/germany/index.htm', 'border 1px') ?>

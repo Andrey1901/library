@@ -1,0 +1,702 @@
+
+<!-- 20170621 14:02:51 -->
+<RateRequest xmlns= http://fedex.com/esb/report >
+<WebAuthenticationDetail>
+<UserCredential>
+    <Key>ZIemLQ3Qrvu9aFLu</Key>
+    <Password/>
+</UserCredential>
+</WebAuthenticationDetail>
+<ClientDetail>
+<AccountNumber>149853561</AccountNumber>
+<MeterNumber>111057702</MeterNumber>
+</ClientDetail>
+<TransactionDetail>
+<CustomerTransactionId>ActiveShipping</CustomerTransactionId>
+</TransactionDetail>
+<Version>
+<ServiceId>crs</ServiceId>
+<Major>13</Major>
+<Intermediate>0</Intermediate>
+<Minor>0</Minor>
+</Version>
+<ReturnTransitAndCommit>true</ReturnTransitAndCommit>
+<VariableOptions>SATURDAY_DELIVERY</VariableOptions>
+<RequestedShipment>
+<ShipTimestamp>2017-06-21T19:03:28+00:00</ShipTimestamp>
+<DropoffType>REGULAR_PICKUP</DropoffType>
+<PackagingType>YOUR_PACKAGING</PackagingType>
+<Shipper>
+    <Address>
+        <City>New York</City>
+        <PostalCode>10024</PostalCode>
+        <CountryCode>US</CountryCode>
+        <Residential>true</Residential>
+    </Address>
+</Shipper>
+<Recipient>
+    <Address>
+        <City>Rockaway</City>
+        <PostalCode>07866</PostalCode>
+        <CountryCode>US</CountryCode>
+        <Residential>true</Residential>
+    </Address>
+</Recipient>
+<SmartPostDetail>
+    <Indicia>PARCEL_SELECT</Indicia>
+    <HubId>5902</HubId>
+</SmartPostDetail>
+<RateRequestTypes>ACCOUNT</RateRequestTypes>
+<PackageCount>1</PackageCount>
+<RequestedPackageLineItems>
+    <GroupPackageCount>1</GroupPackageCount>
+    <Weight>
+        <Units>LB</Units>
+        <Value>1000.0</Value>
+    </Weight>
+    <Dimensions>
+        <Length>0</Length>
+        <Width>0</Width>
+    <Height>0</Height>
+        <Units>IN</Units>
+    </Dimensions>
+</RequestedPackageLineItems>
+</RequestedShipment>
+</RateRequest>
+<RateReply xmlns= http://fedex.com/esb/report >
+<HighestSeverity>NOTE</HighestSeverity>
+<Notifications>
+<Severity>NOTE</Severity>
+<Source>crs</Source>
+<Code>819</Code>
+<Message>The origin state/province code has been changed.</Message>
+<LocalizedMessage>The origin state/province code has been changed.</LocalizedMessage>
+</Notifications>
+<Notifications>
+<Severity>NOTE</Severity>
+<Source>crs</Source>
+<Code>820</Code>
+<Message>The destination state/province code has been changed.</Message>
+<LocalizedMessage>The destination state/province code has been changed.</LocalizedMessage>
+</Notifications>
+<TransactionDetail>
+<CustomerTransactionId>ActiveShipping</CustomerTransactionId>
+</TransactionDetail>
+<Version>
+<ServiceId>crs</ServiceId>
+<Major>13</Major>
+<Intermediate>0</Intermediate>
+<Minor>0</Minor>
+</Version>
+<RateReplyDetails>
+<ServiceType>FEDEX_FIRST_FREIGHT</ServiceType>
+<PackagingType>YOUR_PACKAGING</PackagingType>
+<DeliveryStation>EWRRT</DeliveryStation>
+<DeliveryDayOfWeek>THU</DeliveryDayOfWeek>
+<DeliveryTimestamp>2017-06-22T09:00:00</DeliveryTimestamp>
+<CommitDetails>
+    <ServiceType>FEDEX_FIRST_FREIGHT</ServiceType>
+    <CommitTimestamp>2017-06-22T09:00:00</CommitTimestamp>
+    <DayOfWeek>THU</DayOfWeek>
+    <DestinationServiceArea>H1</DestinationServiceArea>
+    <BrokerToDestinationDays>0</BrokerToDestinationDays>
+    <DocumentContent>NON_DOCUMENTS</DocumentContent>
+</CommitDetails>
+<DestinationAirportId>EWR</DestinationAirportId>
+<IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+<OriginServiceArea>H2</OriginServiceArea>
+<DestinationServiceArea>H1</DestinationServiceArea>
+<SignatureOption>SERVICE_DEFAULT</SignatureOption>
+<ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+<RatedShipmentDetails>
+    <ShipmentRateDetail>
+        <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+        <RateScale>5360</RateScale>
+        <RateZone>2</RateZone>
+        <PricingCode>HUNDREDWEIGHT</PricingCode>
+        <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+        <DimDivisor>0</DimDivisor>
+        <FuelSurchargePercent>2.0</FuelSurchargePercent>
+        <TotalBillingWeight>
+            <Units>LB</Units>
+            <Value>1000.0</Value>
+        </TotalBillingWeight>
+        <TotalBaseCharge>
+            <Currency>USD</Currency>
+            <Amount>1550.0</Amount>
+        </TotalBaseCharge>
+        <TotalFreightDiscounts>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalFreightDiscounts>
+        <TotalNetFreight>
+            <Currency>USD</Currency>
+            <Amount>1550.0</Amount>
+        </TotalNetFreight>
+        <TotalSurcharges>
+            <Currency>USD</Currency>
+            <Amount>286.0</Amount>
+        </TotalSurcharges>
+        <TotalNetFedExCharge>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetFedExCharge>
+        <TotalTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalTaxes>
+        <TotalNetCharge>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetCharge>
+        <TotalRebates>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalRebates>
+        <TotalDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalDutiesAndTaxes>
+        <TotalNetChargeWithDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetChargeWithDutiesAndTaxes>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+            <Description>Heavyweight residential pickup</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+            <Description>Heavyweight residential delivery</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>FUEL</SurchargeType>
+            <Description>Fuel</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>36.0</Amount>
+            </Amount>
+        </Surcharges>
+    </ShipmentRateDetail>
+    <RatedPackages>
+        <GroupNumber>0</GroupNumber>
+        <PackageRateDetail>
+            <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+            <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+            <BillingWeight>
+                <Units>LB</Units>
+                <Value>1000.0</Value>
+            </BillingWeight>
+            <BaseCharge>
+                <Currency>USD</Currency>
+                <Amount>1550.0</Amount>
+            </BaseCharge>
+            <TotalFreightDiscounts>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalFreightDiscounts>
+            <NetFreight>
+                <Currency>USD</Currency>
+                <Amount>1550.0</Amount>
+            </NetFreight>
+            <TotalSurcharges>
+                <Currency>USD</Currency>
+                <Amount>286.0</Amount>
+            </TotalSurcharges>
+            <NetFedExCharge>
+                <Currency>USD</Currency>
+                <Amount>1836.0</Amount>
+            </NetFedExCharge>
+            <TotalTaxes>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalTaxes>
+            <NetCharge>
+                <Currency>USD</Currency>
+                <Amount>1836.0</Amount>
+            </NetCharge>
+            <TotalRebates>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalRebates>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+                <Description>Heavyweight residential pickup</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                <Description>Heavyweight residential delivery</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>FUEL</SurchargeType>
+                <Description>Fuel</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>36.0</Amount>
+                </Amount>
+            </Surcharges>
+        </PackageRateDetail>
+    </RatedPackages>
+</RatedShipmentDetails>
+<RatedShipmentDetails>
+    <ShipmentRateDetail>
+        <RateType>RATED_ACCOUNT_PACKAGE</RateType>
+        <RateScale>5360</RateScale>
+        <RateZone>2</RateZone>
+        <PricingCode>HUNDREDWEIGHT</PricingCode>
+        <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+        <DimDivisor>0</DimDivisor>
+        <FuelSurchargePercent>2.0</FuelSurchargePercent>
+        <TotalBillingWeight>
+            <Units>LB</Units>
+            <Value>1000.0</Value>
+        </TotalBillingWeight>
+        <TotalBaseCharge>
+            <Currency>USD</Currency>
+            <Amount>1550.0</Amount>
+        </TotalBaseCharge>
+        <TotalFreightDiscounts>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalFreightDiscounts>
+        <TotalNetFreight>
+            <Currency>USD</Currency>
+            <Amount>1550.0</Amount>
+        </TotalNetFreight>
+        <TotalSurcharges>
+            <Currency>USD</Currency>
+            <Amount>286.0</Amount>
+        </TotalSurcharges>
+        <TotalNetFedExCharge>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetFedExCharge>
+        <TotalTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalTaxes>
+        <TotalNetCharge>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetCharge>
+        <TotalRebates>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalRebates>
+        <TotalDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalDutiesAndTaxes>
+        <TotalNetChargeWithDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>1836.0</Amount>
+        </TotalNetChargeWithDutiesAndTaxes>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+            <Description>Heavyweight residential pickup</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+            <Description>Heavyweight residential delivery</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>FUEL</SurchargeType>
+            <Description>Fuel</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>36.0</Amount>
+            </Amount>
+        </Surcharges>
+    </ShipmentRateDetail>
+    <RatedPackages>
+        <GroupNumber>0</GroupNumber>
+        <PackageRateDetail>
+            <RateType>RATED_ACCOUNT_PACKAGE</RateType>
+            <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+            <BillingWeight>
+                <Units>LB</Units>
+                <Value>1000.0</Value>
+            </BillingWeight>
+            <BaseCharge>
+                <Currency>USD</Currency>
+                <Amount>1550.0</Amount>
+            </BaseCharge>
+            <TotalFreightDiscounts>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalFreightDiscounts>
+            <NetFreight>
+                <Currency>USD</Currency>
+                <Amount>1550.0</Amount>
+            </NetFreight>
+            <TotalSurcharges>
+                <Currency>USD</Currency>
+                <Amount>286.0</Amount>
+            </TotalSurcharges>
+            <NetFedExCharge>
+                <Currency>USD</Currency>
+                <Amount>1836.0</Amount>
+            </NetFedExCharge>
+            <TotalTaxes>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalTaxes>
+            <NetCharge>
+                <Currency>USD</Currency>
+                <Amount>1836.0</Amount>
+            </NetCharge>
+            <TotalRebates>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalRebates>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+                <Description>Heavyweight residential pickup</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                <Description>Heavyweight residential delivery</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>FUEL</SurchargeType>
+                <Description>Fuel</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>36.0</Amount>
+                </Amount>
+            </Surcharges>
+        </PackageRateDetail>
+    </RatedPackages>
+</RatedShipmentDetails>
+</RateReplyDetails>
+<RateReplyDetails>
+<ServiceType>FEDEX_1_DAY_FREIGHT</ServiceType>
+<PackagingType>YOUR_PACKAGING</PackagingType>
+<DeliveryStation>EWRRT</DeliveryStation>
+<DeliveryDayOfWeek>THU</DeliveryDayOfWeek>
+<DeliveryTimestamp>2017-06-22T10:30:00</DeliveryTimestamp>
+<CommitDetails>
+    <ServiceType>FEDEX_1_DAY_FREIGHT</ServiceType>
+    <CommitTimestamp>2017-06-22T10:30:00</CommitTimestamp>
+    <DayOfWeek>THU</DayOfWeek>
+    <DestinationServiceArea>H1</DestinationServiceArea>
+    <BrokerToDestinationDays>0</BrokerToDestinationDays>
+    <DocumentContent>NON_DOCUMENTS</DocumentContent>
+</CommitDetails>
+<DestinationAirportId>EWR</DestinationAirportId>
+<IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+<OriginServiceArea>H2</OriginServiceArea>
+<DestinationServiceArea>H1</DestinationServiceArea>
+<SignatureOption>SERVICE_DEFAULT</SignatureOption>
+<ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+<RatedShipmentDetails>
+    <ShipmentRateDetail>
+        <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+        <RateScale>2170</RateScale>
+        <RateZone>2</RateZone>
+        <PricingCode>HUNDREDWEIGHT</PricingCode>
+        <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+        <DimDivisor>0</DimDivisor>
+        <FuelSurchargePercent>2.0</FuelSurchargePercent>
+        <TotalBillingWeight>
+            <Units>LB</Units>
+            <Value>1000.0</Value>
+        </TotalBillingWeight>
+        <TotalBaseCharge>
+            <Currency>USD</Currency>
+            <Amount>1110.0</Amount>
+        </TotalBaseCharge>
+        <TotalFreightDiscounts>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalFreightDiscounts>
+        <TotalNetFreight>
+            <Currency>USD</Currency>
+            <Amount>1110.0</Amount>
+        </TotalNetFreight>
+        <TotalSurcharges>
+            <Currency>USD</Currency>
+            <Amount>277.2</Amount>
+        </TotalSurcharges>
+        <TotalNetFedExCharge>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetFedExCharge>
+        <TotalTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalTaxes>
+        <TotalNetCharge>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetCharge>
+        <TotalRebates>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalRebates>
+        <TotalDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalDutiesAndTaxes>
+        <TotalNetChargeWithDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetChargeWithDutiesAndTaxes>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+            <Description>Heavyweight residential pickup</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+            <Description>Heavyweight residential delivery</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>FUEL</SurchargeType>
+            <Description>Fuel</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>27.2</Amount>
+            </Amount>
+        </Surcharges>
+    </ShipmentRateDetail>
+    <RatedPackages>
+        <GroupNumber>0</GroupNumber>
+        <PackageRateDetail>
+            <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+            <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+            <BillingWeight>
+                <Units>LB</Units>
+                <Value>1000.0</Value>
+            </BillingWeight>
+            <BaseCharge>
+                <Currency>USD</Currency>
+                <Amount>1110.0</Amount>
+            </BaseCharge>
+            <TotalFreightDiscounts>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalFreightDiscounts>
+            <NetFreight>
+                <Currency>USD</Currency>
+                <Amount>1110.0</Amount>
+            </NetFreight>
+            <TotalSurcharges>
+                <Currency>USD</Currency>
+                <Amount>277.2</Amount>
+            </TotalSurcharges>
+            <NetFedExCharge>
+                <Currency>USD</Currency>
+                <Amount>1387.2</Amount>
+            </NetFedExCharge>
+            <TotalTaxes>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalTaxes>
+            <NetCharge>
+                <Currency>USD</Currency>
+                <Amount>1387.2</Amount>
+            </NetCharge>
+            <TotalRebates>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalRebates>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+                <Description>Heavyweight residential pickup</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                <Description>Heavyweight residential delivery</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>FUEL</SurchargeType>
+                <Description>Fuel</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>27.2</Amount>
+                </Amount>
+            </Surcharges>
+        </PackageRateDetail>
+    </RatedPackages>
+</RatedShipmentDetails>
+<RatedShipmentDetails>
+    <ShipmentRateDetail>
+        <RateType>RATED_ACCOUNT_PACKAGE</RateType>
+        <RateScale>2170</RateScale>
+        <RateZone>2</RateZone>
+        <PricingCode>HUNDREDWEIGHT</PricingCode>
+        <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+        <DimDivisor>0</DimDivisor>
+        <FuelSurchargePercent>2.0</FuelSurchargePercent>
+        <TotalBillingWeight>
+            <Units>LB</Units>
+            <Value>1000.0</Value>
+        </TotalBillingWeight>
+        <TotalBaseCharge>
+            <Currency>USD</Currency>
+            <Amount>1110.0</Amount>
+        </TotalBaseCharge>
+        <TotalFreightDiscounts>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalFreightDiscounts>
+        <TotalNetFreight>
+            <Currency>USD</Currency>
+            <Amount>1110.0</Amount>
+        </TotalNetFreight>
+        <TotalSurcharges>
+            <Currency>USD</Currency>
+            <Amount>277.2</Amount>
+        </TotalSurcharges>
+        <TotalNetFedExCharge>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetFedExCharge>
+        <TotalTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalTaxes>
+        <TotalNetCharge>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetCharge>
+        <TotalRebates>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalRebates>
+        <TotalDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>0.0</Amount>
+        </TotalDutiesAndTaxes>
+        <TotalNetChargeWithDutiesAndTaxes>
+            <Currency>USD</Currency>
+            <Amount>1387.2</Amount>
+        </TotalNetChargeWithDutiesAndTaxes>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+            <Description>Heavyweight residential pickup</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+            <Description>Heavyweight residential delivery</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>125.0</Amount>
+            </Amount>
+        </Surcharges>
+        <Surcharges>
+            <SurchargeType>FUEL</SurchargeType>
+            <Description>Fuel</Description>
+            <Amount>
+                <Currency>USD</Currency>
+                <Amount>27.2</Amount>
+            </Amount>
+        </Surcharges>
+    </ShipmentRateDetail>
+    <RatedPackages>
+        <GroupNumber>0</GroupNumber>
+        <PackageRateDetail>
+            <RateType>RATED_ACCOUNT_PACKAGE</RateType>
+            <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+            <BillingWeight>
+                <Units>LB</Units>
+                <Value>1000.0</Value>
+            </BillingWeight>
+            <BaseCharge>
+                <Currency>USD</Currency>
+                <Amount>1110.0</Amount>
+            </BaseCharge>
+            <TotalFreightDiscounts>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalFreightDiscounts>
+            <NetFreight>
+                <Currency>USD</Currency>
+                <Amount>1110.0</Amount>
+            </NetFreight>
+            <TotalSurcharges>
+                <Currency>USD</Currency>
+                <Amount>277.2</Amount>
+            </TotalSurcharges>
+            <NetFedExCharge>
+                <Currency>USD</Currency>
+                <Amount>1387.2</Amount>
+            </NetFedExCharge>
+            <TotalTaxes>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalTaxes>
+            <NetCharge>
+                <Currency>USD</Currency>
+                <Amount>1387.2</Amount>
+            </NetCharge>
+            <TotalRebates>
+                <Currency>USD</Currency>
+                <Amount>0.0</Amount>
+            </TotalRebates>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_PICKUP</SurchargeType>
+                <Description>Heavyweight residential pickup</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
+                </Amount>
+            </Surcharges>
+            <Surcharges>
+                <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                <Description>Heavyweight residential delivery</Description>
+                <Amount>
+                    <Currency>USD</Currency>
+                    <Amount>125.0</Amount>
